@@ -27,13 +27,13 @@ public class Dice : MonoBehaviour
         {
             RollDice();
         }
-
+        /*
         if (rb.IsSleeping() && !hasLanded && thrown)
         {
             SideValueCheck();
             hasLanded = true;
             rb.useGravity = false;
-        }
+        }*/
     }
 
     public void RollDice()

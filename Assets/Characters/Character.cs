@@ -30,6 +30,7 @@ public class Character
     {
         this.Dice = dice;
         Dice.GetComponent<MeshRenderer>().materials[0].color = DiceColor;
+
     }
     public void ThrowDice()
     {
