@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Assets
 {
-    internal enum SideEnum
+    public enum SideEnum
     {
         Front, Back, Top, Right, Bottom, Left
     }

@@ -446,10 +446,10 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5916610606857036356}
   serializedVersion: 2
-  m_Mass: 3
+  m_Mass: 15
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -466,6 +466,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc29067ecc5d25c4a831b394b1cbd55b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasLanded: 0
+  thrown: 0
   diceValue: 0
   diceSides:
   - {fileID: 5916610605380517410}

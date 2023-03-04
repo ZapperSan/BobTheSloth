@@ -12,10 +12,11 @@ public class Character
     private int CurrentHP;
     private int Shield;
     private bool IsHero;
-    private DiceToken[] diceTokens;
+    private DiceToken[] DiceTokens;
     private Color DiceColor;
+    private GameObject Dice;
 
-    public Character(int maxHP, string name, bool isHero, Color diceColor)
+    public Character(int maxHP, string name, bool isHero, Color diceColor, DiceToken[] diceTokens)
     {
         this.MaxHP = maxHP;
         this.CharName = name;
@@ -23,11 +24,29 @@ public class Character
         this.Shield = 0;
         this.IsHero = isHero;
         this.DiceColor = diceColor;
+        this.DiceTokens = diceTokens;
+    }
+    public void SetDice(GameObject dice)
+    {
+        this.Dice = dice;
+        Dice.GetComponent<MeshRenderer>().materials[0].color = DiceColor;
+    }
+    public void ThrowDice()
+    {
+        Dice.GetComponent<Dice>().RollDice();
     }
 
     public bool getHeroStatus()
     {
         return IsHero;
+    }
+    public Color GetDiceColor()
+    {
+        return this.DiceColor;
+    }
+    public Dice GetDice()
+    {
+        return Dice.GetComponent<Dice>();
     }
 
     public bool GetHit(int dmg)

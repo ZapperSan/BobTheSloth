@@ -16,7 +16,7 @@ public class Dice : MonoBehaviour
     public DiceSide[] diceSides;
     private void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = this.GetComponent<Rigidbody>();
         initPosition = transform.position;
         rb.useGravity = false;
     }
@@ -36,7 +36,7 @@ public class Dice : MonoBehaviour
         }
     }
 
-    private void RollDice()
+    public void RollDice()
     {
         if (!thrown && !hasLanded)
         {
@@ -69,5 +69,9 @@ public class Dice : MonoBehaviour
             }
         }
         
+    }
+    public bool GetEnd()
+    {
+        return (hasLanded && thrown);
     }
 }

@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace Assets.Characters
 {
-    internal class DiceToken
+    public class DiceToken
     {
-        SideEnum Side;
-        private int pips;
-        private Action Action;
+        private SideEnum Side { get; set; }
+        private int Pips { get; set; }
+        private string Action { get; set; }
+
+        public DiceToken(SideEnum side, int pips, string action)
+        {
+            Side = side;
+            Pips = pips;
+            Action = action;
+        }
     }
 }
