@@ -366,11 +366,12 @@
 "Assets/Dungeon/Scripts/Player/PlayerMotor.cs"
 "Assets/Dungeon/Scripts/Player/PlayerUI.cs"
 "Assets/Dungeon/Scripts/RoomBehaviour.cs"
+"Assets/Dungeon/Scripts/Triggered.cs"
 "Assets/Dungeon/Scripts/WallCollision.cs"
+"Assets/Dungeon/TriggerEvents.cs"
 "Assets/GameManager.cs"
+"Assets/Grabber.cs"
 "Assets/SideEnum.cs"
-"Assets/Triggered.cs"
-"Assets/TriggerEvents.cs"
 -langversion:9.0
 
 /deterministic

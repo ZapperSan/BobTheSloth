@@ -75,6 +75,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7daba39639ab2747b38f417de205e02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _StartTransition: {fileID: 0}
+  _EndTransition: {fileID: 0}
+  sceneName: 
 --- !u!1 &66164617529849676
 GameObject:
   m_ObjectHideFlags: 0
