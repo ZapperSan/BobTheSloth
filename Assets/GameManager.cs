@@ -29,7 +29,6 @@ namespace Assets
         private List<Character> CharacterList;
         private List<GameObject> Dices;
         public Vector3 DiceSpawinPoint;
-        Database db;
 
         private void Update()
         {

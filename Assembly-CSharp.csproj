@@ -61,7 +61,6 @@
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\DiceSide.cs" />
     <Compile Include="Assets\Characters\DiceToken.cs" />
-    <Compile Include="Assets\Database.cs" />
     <Compile Include="Assets\SideEnum.cs" />
     <Compile Include="Assets\Characters\Character.cs" />
   </ItemGroup>
