@@ -351,6 +351,7 @@
 "Assets/Dice.cs"
 "Assets/DiceSide.cs"
 "Assets/GameManager.cs"
+"Assets/Grabber.cs"
 "Assets/SideEnum.cs"
 -langversion:9.0
 
