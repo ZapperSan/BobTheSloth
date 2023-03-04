@@ -10,10 +10,7 @@ public class Database : MonoBehaviour
 	public static List<Character> characterList = new List<Character>();
 
 	// Start is called before the first frame update
-	void Start()
-	{
-		GenerateHeroesList();
-	}
+	p
 
 	private void GenerateHeroesList()
 	{
