@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Scene1.unity
+=======
+- path: Assets/Scenes/Dungeon.unity
+>>>>>>> da15c5d01e7b6183bc39d2269167592c4f1079b8
   isLoaded: 1
   isActive: 1
   isSubScene: 0
