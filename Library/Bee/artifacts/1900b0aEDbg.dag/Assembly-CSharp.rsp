@@ -112,6 +112,7 @@
 -define:ENABLE_TERRAIN
 -define:ENABLE_TILEMAP
 -define:ENABLE_TIMELINE
+-define:ENABLE_INPUT_SYSTEM
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:CSHARP_7_OR_LATER
@@ -323,6 +324,7 @@
 -r:"D:/Unity/Projects/BobTheSloth/Library/PackageCache/com.unity.testtools.codecoverage@1.2.2/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"D:/Unity/Projects/BobTheSloth/Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.EditorCoroutines.Editor.ref.dll"
+-r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.InputSystem.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aEDbg.dag/Unity.Rider.Editor.ref.dll"
@@ -350,9 +352,25 @@
 "Assets/Characters/DiceToken.cs"
 "Assets/Dice.cs"
 "Assets/DiceSide.cs"
+"Assets/Dungeon/Input/PlayerInput.cs"
+"Assets/Dungeon/MeshCombiner/Scripts/MeshCombiner.cs"
+"Assets/Dungeon/Scripts/Camera/CameraChange.cs"
+"Assets/Dungeon/Scripts/Camera/CameraFollow.cs"
+"Assets/Dungeon/Scripts/DungeonGenerator.cs"
+"Assets/Dungeon/Scripts/InputManager.cs"
+"Assets/Dungeon/Scripts/Interactable.cs"
+"Assets/Dungeon/Scripts/Interactables/Keypad.cs"
+"Assets/Dungeon/Scripts/Player/PlayerInteract.cs"
+"Assets/Dungeon/Scripts/Player/PlayerLook.cs"
+"Assets/Dungeon/Scripts/Player/PlayerMotor.cs"
+"Assets/Dungeon/Scripts/Player/PlayerUI.cs"
+"Assets/Dungeon/Scripts/RoomBehaviour.cs"
+"Assets/Dungeon/Scripts/WallCollision.cs"
+"Assets/Dungeon/TriggerEvents.cs"
 "Assets/GameManager.cs"
 "Assets/Grabber.cs"
 "Assets/SideEnum.cs"
+"Assets/Triggered.cs"
 -langversion:9.0
 
 /deterministic

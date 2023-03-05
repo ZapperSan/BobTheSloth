@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class Dice : MonoBehaviour
 {
@@ -27,13 +28,12 @@ public class Dice : MonoBehaviour
         {
             RollDice();
         }
-        /*
         if (rb.IsSleeping() && !hasLanded && thrown)
         {
             SideValueCheck();
             hasLanded = true;
             rb.useGravity = false;
-        }*/
+        }
     }
 
     public void RollDice()
@@ -73,5 +73,16 @@ public class Dice : MonoBehaviour
     public bool GetEnd()
     {
         return (hasLanded && thrown);
+    }
+
+    public void MoveDice (Vector3 v3)
+    {
+        Quaternion rotace = this.transform.rotation;
+        rotace.x = Mathf.Round(rotace.x / 90) * 90;
+        rotace.y = Mathf.Round(rotace.y / 90) * 90;
+        rotace.z = Mathf.Round(rotace.z / 90) * 90;
+        this.transform.rotation = rotace;
+        this.transform.position = v3 + new Vector3(0.6f,1f,0);
+        this.GetComponent<Rigidbody>().useGravity = false;
     }
 }

@@ -18,5 +18,13 @@ namespace Assets.Characters
             Pips = pips;
             Action = action;
         }
+        public string GetAction()
+        {
+            return Action;
+        }
+        public string getPips()
+        {
+            return Pips.ToString();
+        }
     }
 }

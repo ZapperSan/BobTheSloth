@@ -25,18 +25,37 @@ namespace Assets
         {
             switch (this.turn)
             {
-                case 0:
-                    break;
                 case 1:
+                    int endChar = 0;
                     foreach (Character character in EnemyMonsters)
                     {
                         if(!character.GetDice().GetEnd())
                         {
                             character.ThrowDice();
                         }
+                        else
+                        {
+                            character.GetDice().MoveDice(character.getCardV3());
+                            endChar++;
+                        }
+                        if (endChar == EnemyMonsters.Count()) this.turn++;
                     }
                     break;
                 case 2:
+                    int endChar1 = 0;
+                    foreach (Character character in PlayerHeroes)
+                    {
+                        if (!character.GetDice().GetEnd())
+                        {
+                            character.ThrowDice();
+                        }
+                        else
+                        {
+                            character.GetDice().MoveDice(character.getCardV3());
+                            endChar1++;
+                        }
+                        if (endChar1 == PlayerHeroes.Count()) this.turn++;
+                    }
                     break; 
                 case 3:
                     break;
@@ -54,7 +73,13 @@ namespace Assets
             EnemyMonsters.Add(CharacterList[1]);
             EnemyMonsters.Add(CharacterList[2]);
             EnemyMonsters.Add(CharacterList[3]);
+
+            PlayerHeroes.Add(CharacterList[0]);
+            PlayerHeroes.Add(CharacterList[1]);
+            PlayerHeroes.Add(CharacterList[2]);
+            PlayerHeroes.Add(CharacterList[3]);
             MonsterPrepare();
+            PrepareArena();
             this.turn = 1;
         }
 
@@ -123,6 +148,23 @@ namespace Assets
              *
              */
             this.MonsterPrepare();
+        }
+        public void PrepareArena()
+        {
+            int i = 0;
+            foreach(Character character in PlayerHeroes)
+            {
+                var GenCharCard = Instantiate(PlayerCard,new Vector3(-7.5f + (i*4.2f),0, -3.9f),transform.rotation);
+                character.SetCard(GenCharCard);
+                i++;
+            }
+            i = 0;
+            foreach(Character character in EnemyMonsters)
+            {
+                var GenCharCard = Instantiate(PlayerCard, new Vector3(7.6f - (i * 4.2f), 0f, 3.3f), transform.rotation);
+                character.SetCard(GenCharCard);
+                i++;
+            }
         }
     }
 }
