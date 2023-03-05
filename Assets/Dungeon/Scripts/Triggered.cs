@@ -20,7 +20,7 @@ public class Triggered : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
-  _StartTransition.SetActive(true);
+        _StartTransition.SetActive(true);
         new WaitForSecondsRealtime(5f);
         _StartTransition.SetActive(false);
         _EndTransition.SetActive(true);

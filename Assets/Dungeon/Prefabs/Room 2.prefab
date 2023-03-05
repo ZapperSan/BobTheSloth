@@ -1049,7 +1049,6 @@ GameObject:
   - component: {fileID: 536553390283899300}
   - component: {fileID: 101732665342510066}
   - component: {fileID: 7308335579065416468}
-  - component: {fileID: 2540875239856669656}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1101,19 +1100,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2540875239856669656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3540043962828189280}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7daba39639ab2747b38f417de205e02, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Scene1
 --- !u!1 &3698728642505642054
 GameObject:
   m_ObjectHideFlags: 0
